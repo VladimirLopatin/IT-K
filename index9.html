@@ -1,0 +1,41 @@
+<input value='Dmitriy' class='first-name-input default-input' id='first-name' />
+<input value='Ivanov' class='last-name-input default-input' id='last-name' />
+<input value='Sarov-city' class='address-input default-input' id='address' />
+
+<select id='cities'>
+    <option>Russia</option>
+    <option>Sarov</option>
+    <option selected='selected'>Moscow</option>
+</select>
+
+<textarea id='hobbies'>JS, CSS, HTML</textarea>
+
+<script>
+    var firstNameId = 'first-name',
+        firstNameEl = document.getElementById(firstNameId),
+        lastNameId = 'lastName',
+        lastNameEl = document.getElementById(lastNameId),
+        addressId = 'address',
+        addressEl = document.getElementById(addressId),
+        citiesId = 'cities',
+        citiesEl = document.getElementById(citiesId),
+        hobbiesId = 'hobbies',
+        hobbiesEl = document.getElementById(hobbiesId);
+
+
+    firstNameEl.value = 'Andrew';
+    lastNameEl.className = 'last-name-input default-input error-input';
+
+
+</script>
+
+<style>
+    .default-input {
+        border: blue 1px solid;
+        padding: 5px;
+    }
+
+    .error-input {
+        border-color: red;
+    }
+</style>
