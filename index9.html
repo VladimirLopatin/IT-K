@@ -1,38 +1,39 @@
 <input value='Dmitriy' class='first-name-input default-input' id='first-name' />
 <input value='Ivanov' class='last-name-input default-input' id='last-name' />
-<input value='Sarov-city' class='address-input default-input' id='address' />
+<input value='Moscow-city' class='addres-input default-input' id='addres' />
 
 <select id='cities'>
-    <option>Russia</option>
-    <option>Sarov</option>
+    <option>Kiev</option>
+    <option>Minsk</option>
     <option selected='selected'>Moscow</option>
 </select>
 
-<textarea id='hobbies'>JS, CSS, HTML</textarea>
+<textarea id='hobbies'>HTML, CSS, JS</textarea>
 
 <script>
     var firstNameId = 'first-name',
         firstNameEl = document.getElementById(firstNameId),
-        lastNameId = 'lastName',
+        lastNameId = 'last-name',
         lastNameEl = document.getElementById(lastNameId),
         addressId = 'address',
-        addressEl = document.getElementById(addressId),
+        addresEl = document.getElementById(addressId),
         citiesId = 'cities',
         citiesEl = document.getElementById(citiesId),
         hobbiesId = 'hobbies',
         hobbiesEl = document.getElementById(hobbiesId);
 
+    firstNameEl.value = 'Alexander';
+    //lastNameEl.setAttribute('value', 'Belov');
 
-    firstNameEl.value = 'Andrew';
-    lastNameEl.className = 'last-name-input default-input error-input';
+    window.alert(lastNameEl.className);
+    lastNameEl.className = 'last-name input default-input error-input';
 
-
+    citiesEl.value = 'Minsk';
 </script>
 
 <style>
     .default-input {
-        border: blue 1px solid;
-        padding: 5px;
+        border: green 1px solid;
     }
 
     .error-input {
