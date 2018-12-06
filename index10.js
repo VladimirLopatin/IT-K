@@ -1,14 +1,18 @@
-    var firstNameId = 'first-name',
-        firstNameEl = document.getElementById(firstNameId),
-        lastNameId = 'lastName',
-        lastNameEl = document.getElementById(lastNameId),
-        addressId = 'address',
-        addressEl = document.getElementById(addressId),
-        citiesId = 'cities',
-        citiesEl = document.getElementById(citiesId),
-        hobbiesId = 'hobbies',
-        hobbiesEl = document.getElementById(hobbiesId);
+var firstNameId = 'first-name',
+firstNameEl = document.getElementById(firstNameId),
+lastNameId = 'last-name',
+lastNameEl = document.getElementById(lastNameId),
+addressId = 'address',
+addresEl = document.getElementById(addressId),
+citiesId = 'cities',
+citiesEl = document.getElementById(citiesId),
+hobbiesId = 'hobbies',
+hobbiesEl = document.getElementById(hobbiesId);
 
+firstNameEl.value = 'Alexander';
+//lastNameEl.setAttribute('value', 'Belov');
 
-    firstNameEl.value = 'Andrew';
-    lastNameEl.className = 'last-name-input default-input error-input';
+window.alert(lastNameEl.className);
+lastNameEl.className = 'last-name input default-input error-input';
+
+citiesEl.value = 'Minsk';
